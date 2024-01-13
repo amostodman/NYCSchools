@@ -22,7 +22,8 @@ API Reference and Documentation:
 - [2012 SAT Results](https://data.cityofnewyork.us/Education/2012-SAT-Results/f9bf-2cp4)
 
 Todo:
-- Add gitignore
-- Convert snake case keys from JSON to camel case.
 - Prettify: Add some images or media such as maps or something.
 - CI/CD with GitHub actions: Use the device farm from github for UITesting, automatic screenshots, testflight deployment and other automation.
+- Add gitignore
+- Convert snake case keys from JSON to camel case.
+- Separate code into different files for the many possible sections of the school detail view as the page gets bigger.
