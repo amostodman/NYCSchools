@@ -20,3 +20,9 @@ Technologies used:
 API Reference and Documentation:
 - [DOE High School Directory 2017](https://data.cityofnewyork.us/Education/DOE-High-School-Directory-2017/s3k6-pzi2)
 - [2012 SAT Results](https://data.cityofnewyork.us/Education/2012-SAT-Results/f9bf-2cp4)
+
+Todo:
+- Add gitignore
+- Convert snake case keys from JSON to camel case.
+- Prettify: Add some images or media such as maps or something.
+- CI/CD with GitHub actions: Use the device farm from github for UITesting, automatic screenshots, testflight deployment and other automation.
