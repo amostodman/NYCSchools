@@ -18,7 +18,7 @@ extension SchoolView {
         
         let navigationTitle = "School Details"
         let avgScoresText = "Average Scores"
-        let locationText = "Name and Location"
+        let locationText = "Contact Details"
         let numOfSatTestTakers = "Number of SAT test takers"
         let satCriticalReadingAvgScore = "SAT Critical reading"
         let satMathAvgScore = "SAT Math"

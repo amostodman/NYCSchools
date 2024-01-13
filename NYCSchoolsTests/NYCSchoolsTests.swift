@@ -13,17 +13,9 @@ final class NYCSchoolsTests: XCTestCase {
     
     // Change this to false to test with live web data
     var isForTesting = true
-    
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
     func testPopulateSchools() async throws {
-        // 440 is the number From "What's in this Dataset?" https://data.cityofnewyork.us/Education/2017-DOE-High-School-Directory/s3k6-pzi2
+        // 440 is the number From "What's in this Dataset?" from https://data.cityofnewyork.us/Education/2017-DOE-High-School-Directory/s3k6-pzi2
         let expectedCount = 440
         
         let viewModel = SchoolsView.ViewModel(isForTesting: isForTesting)

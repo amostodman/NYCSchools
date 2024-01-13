@@ -12,6 +12,7 @@
 		9C00A1262B5232DA008EB175 /* SchoolDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C00A1252B5232DA008EB175 /* SchoolDetails.json */; };
 		9C00A12B2B52ADBC008EB175 /* NYCSchoolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA83F2A2B520C2900E35661 /* NYCSchoolsApp.swift */; };
 		9C00A12C2B52ADC0008EB175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA83F2E2B520C2C00E35661 /* Assets.xcassets */; };
+		9C00A1652B52BACF008EB175 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C00A1642B52BACF008EB175 /* Launch Screen.storyboard */; };
 		9CA83F332B520C2C00E35661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA83F322B520C2C00E35661 /* Preview Assets.xcassets */; };
 		9CA83F3D2B520C2C00E35661 /* NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA83F3C2B520C2C00E35661 /* NYCSchoolsTests.swift */; };
 		9CA83F472B520C2C00E35661 /* NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA83F462B520C2C00E35661 /* NYCSchoolsUITests.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		9C00A1232B5231FE008EB175 /* SchoolDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetails.swift; sourceTree = "<group>"; };
 		9C00A1252B5232DA008EB175 /* SchoolDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SchoolDetails.json; sourceTree = "<group>"; };
+		9C00A1642B52BACF008EB175 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9CA83F272B520C2900E35661 /* NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCSchools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA83F2A2B520C2900E35661 /* NYCSchoolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsApp.swift; sourceTree = "<group>"; };
 		9CA83F2E2B520C2C00E35661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				9CA83F2A2B520C2900E35661 /* NYCSchoolsApp.swift */,
 				9CA83F2E2B520C2C00E35661 /* Assets.xcassets */,
 				9CA83F302B520C2C00E35661 /* NYCSchools.entitlements */,
+				9C00A1642B52BACF008EB175 /* Launch Screen.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				9C00A1262B5232DA008EB175 /* SchoolDetails.json in Resources */,
 				9C00A1222B522835008EB175 /* Schools.json in Resources */,
 				9C00A12C2B52ADC0008EB175 /* Assets.xcassets in Resources */,
+				9C00A1652B52BACF008EB175 /* Launch Screen.storyboard in Resources */,
 				9CA83F332B520C2C00E35661 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,11 +518,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -552,11 +557,12 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;

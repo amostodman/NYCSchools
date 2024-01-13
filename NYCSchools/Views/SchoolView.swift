@@ -17,13 +17,43 @@ struct SchoolView: View {
     var body: some View {
         List {
             Section(header: Text(viewModel.locationText)) {
+                VStack(alignment: .leading) {
+                    Text("\(school.school_name ?? "")").font(.title2)
+                    Text("\(school.city ?? ""), \(school.state_code ?? "") \(school.zip ?? "")")
+                }
+                
+                if
+                    let phoneNumber = school.phone_number,
+                    let url = URL(string: "tel:\(phoneNumber)")
+                {
                     VStack(alignment: .leading) {
-                        Text("\(school.school_name ?? "")").font(.title2)
-                        Text("\(school.city ?? ""), \(school.state_code ?? ""), \(school.zip ?? "")")
-                        Text("P: \(school.phone_number ?? "")")
-                        Text("E: \(school.school_email ?? "")")
-                        Text("W: \(school.website ?? "")")
+                        Link(destination: url) {
+                            Text("Phone: \(phoneNumber)")
+                        }
                     }
+                }
+                
+                if
+                    let email = school.school_email,
+                    let url = URL(string: "mailto:\(email)")
+                {
+                    VStack(alignment: .leading) {
+                        Link(destination: url) {
+                            Text("Email: \(email)")
+                        }
+                    }
+                }
+                
+                if
+                    let website = school.website,
+                    let url = URL(string: "https://\(website)")
+                {
+                    VStack(alignment: .leading) {
+                        Link(destination: url) {
+                            Text("Web: \(website)")
+                        }
+                    }
+                }
             }
             
             if let overviewParagraph = school.overview_paragraph {
